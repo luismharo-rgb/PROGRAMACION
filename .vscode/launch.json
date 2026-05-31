@@ -1,10 +1,20 @@
 {
     "version": "0.2.0",
     "configurations": [
+        
+        {
+            "name": "Python: Terminal Externa",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "externalTerminal",
+            "purpose": ["debug-in-python-view"]
+        }
         {
             "name": "Depurar C",
             "type": "cppdbg",
             "request": "launch",
+         
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
